@@ -13,7 +13,10 @@
     <title>Document</title>
 
 <style>
-
+*{
+    text-transform: capitalize !important;
+    
+}
 
 .open-sans {
   font-family: "Open Sans", sans-serif;
@@ -25,6 +28,12 @@
 .orrange{
     color: #FD6E0A;
 }
+
+.navbar{font-size: 45px;
+line-height: 64px;
+font-weight: 800;
+}
+
 nav>ul{
 
     display: flex;
@@ -39,8 +48,14 @@ nav>ul>li{
 nav>ul>li>a{
     text-decoration: none;
     margin: 0px;
+    font-size: 20px;
+    line-height: 27px;
   
 
+}
+
+nav>ul>li>button{
+    font-weight: 800;
 }
 .btn_primary{
 padding: 18px 35px;
@@ -50,6 +65,7 @@ padding: 18px 35px;
     border: 0;
     color: white;
     font-size: 20px;
+    font-weight: 800;
 }
 button>a{
     text-decoration: none;
@@ -59,7 +75,7 @@ button>a{
 
 nav{
     height: 154px;
-   
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -77,11 +93,13 @@ padding: 30px 30px 0px 150px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    text-align: left;
 
 
 }
 .banner-content{
     max-width: 500px;
+    text-align: left;
 }
 .profile-picture{
     width: 500px;
@@ -143,7 +161,7 @@ line-height:30px;
 .What_i_do{
 
 align-items: center;
-padding: 30px 150px;
+
 }
 .what_i_do_info_container{
     display: flex;
@@ -162,6 +180,7 @@ padding: 30px 150px;
     box-shadow: 0 6px 50px 0 rgba(0, 0, 0, 0.06);
     border-radius: 5px;
     padding:17px;
+    width: 266px;
 
 }
 .i_do_title{
@@ -169,12 +188,133 @@ padding: 30px 150px;
     color: #181818;
     font-size: 20px;
     font-weight: 700;
+    margin: 0;
+    line-height: 27px;
 }
 .i_do_des{
     color:#757575;
     font-size: 18px;
+    margin: 0;
+    line-height: 28px;
+}
+section{
+    margin-top: 130px;
+    margin-bottom: 130px;
+    padding: 30px 150px;
+}
+.resume{
+
+
+box-shadow: 0 6px 50px 0 rgba(0, 0, 0, 0.063);
+border-radius: 5px;
+padding-left: 30px;
+padding-right: 30px;
+
 
 }
+
+
+.resume_container{
+
+    margin-top: 30px;
+    display: flex;
+    color: #474747 ;
+    gap:200px;
+    
+  
+}
+.resume_coloum{
+    
+}
+.resume_colum_title{
+    color: #474747;
+    font-weight: 700;
+    font-size: 30px;
+   margin: 30px 0;
+}
+
+.resume_item-title{
+    color: #474747;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 34px;
+    margin: 0px ;
+
+}
+.resume_item_institute{
+    color: #757575;
+    font-weight: 600;
+    font-size: 20px;
+  
+}
+.resume_item_des{
+    font-size: 18px;
+    color: #757575;
+    margin-bottom: 0px;
+    line-height: 27px;
+}
+
+hr{color: #D1D1D1;
+    margin: 30px 0;
+
+}
+.buttonresume{
+    text-align: center;
+    margin-top: 31px;
+}
+footer{
+
+    display: flex;
+    background-color: #FFF8F3;
+    padding: 130px 200px;
+    margin-top: 100px;
+    gap:100px ;
+}
+.footer_coloum{
+ 
+    width: 50%;
+   
+
+}
+.social-link{
+    margin-top: 39px;
+    display: flex;
+    gap: 10px;
+}
+.contact{
+    margin-top: 30px;
+}
+.contact input[type="email"],input[type="text"],textarea{
+    display: block;
+    color: #757575;
+    font-size: 16px;
+    border-radius: 5px;
+    border :0;
+    padding: 26px 35px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.banner-h3{
+
+    font-size: 45px;
+    color: #474747;
+    font-weight: 700;
+margin-bottom: 0px;
+line-height: 61px;
+  
+}
+.banner-h1{
+    font-size: 75px;
+    color: #181818;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: 116px;
+}
+.banner_des{
+    text-align: left;
+}
+
 </style>
 
 </head>
@@ -182,7 +322,7 @@ padding: 30px 150px;
     
 <header>
     <nav>
-<h3 class="open-sans">me<span class="open-sans orrange">r</span>y</h3>
+<h3 class="open-sans navbar">me<span class="open-sans orrange">r</span>y</h3>
 <ul>
     <li><a href="">portfolio</a></li>
     <li> <a href="">blog</a></li>
@@ -195,9 +335,9 @@ padding: 30px 150px;
     <div class="banner">
        
 <div class="banner-content">
-    <h3 class="banner-h3">Hi, I  am</h3>
+    <h3 class="banner-h3 ">Hi, I  am</h3>
     <h1 class="banner-h1">Mary Hardy</h1>
-    <p>Shot what able cold new see hold.Friendly as an betrayed formerly he. Morning because as to society behaved moments.</p>
+    <p class="sec-dis banner_des">Shot what able cold new see hold.Friendly as an betrayed formerly he. Morning because as to society behaved moments.</p>
     <button class="btn_primary">Download cv</button>
     <button class="btn_primary">contact</button>  
     
@@ -208,7 +348,7 @@ padding: 30px 150px;
 
 </header>
 <main>
-    <section class="about">
+    <section class="about ">
 
 <div class="about_all_data">
 
@@ -276,10 +416,120 @@ padding: 30px 150px;
 </section>
 
 
+<section class="resume">
+   <h3 class="sec-title">A summary of My Resume</h3>
+
+<div class="resume_container">
+
+    <div class="resume_coloum">
+        <h3 class="resume_colum_title">My Education</h3>
+   
+   <div class="resume_item">
+    <h2 class="resume_item-title">Master in Computer Engineering</h3>
+    <h3 class="resume_item_institute">Harvard University / 2015 - 2017</h4>
+    <p class="resume_item_des">List skill/technologies here. You can change the icon above 
+        to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
+   </div>
+   <hr>
+
+   <div class="resume_item">
+    <h2 class="resume_item-title">Master in Computer Engineering</h2>
+    <h3 class="resume_item_institute">Harvard University / 2015 - 2017</h3>
+    <p class="resume_item_des">List skill/technologies here. You can change the icon above 
+        to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
+   </div>
+   <hr>
+
+   <div class="resume_item">
+    <h2 class="resume_item-title">Master in Computer Engineering</h2>
+    <h3 class="resume_item_institute">Harvard University / 2015 - 2017</h3>
+    <p class="resume_item_des">List skill/technologies here. You can change the icon above 
+        to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
+   </div>
+   
+
+    </div>
+    <div class="resume_coloum">
+        <h3 class="resume_colum_title">My Experience</h3>
+    
+        <div class="resume_item">
+            <h2 class="resume_item-title">Sr. Font End Developer</h2>
+            <h3 class="resume_item_institute">Apple Inc / 2020 - Current</h3>
+            <p class="resume_item_des">List skill/technologies here. You can change the icon above 
+                to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.
+                </p>
+        </div>
+         <hr>
+       
+        <div class="resume_item">
+            <h2 class="resume_item-title">Jr. Font End Developer</h2>
+            <h3 class="resume_item_institute">Dribbble Inc / 2018 - 2022</h3>
+            <p class="resume_item_des">List skill/technologies here. You can change the icon above 
+                to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.
+                </p>
+        </div>
+        <hr>
+        <div class="resume_item">
+            <h2 class="resume_item-title">HTML Developer</h2>
+            <h3 class="resume_item_institute">Adobe Inc / 2017 - 2018</h3>
+            <p class="resume_item_des">List skill/technologies here. You can change the icon above 
+                to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.
+                </p>
+        </div>
+</div>
+
+
+
+</div>
+<div class="buttonresume">
+
+    <button class="btn_primary ">Download cv</button>
+</div>
+
+</section>
+
+
+
 
 
 
 </main>
+
+<footer>
+
+    <div class="footer_coloum">
+        <h3 class="sec-title">Lets Connect</h3>
+        <p class="sec-dis">Please fill out the form on this section to contact with me or call between 9:00 A.M and 8.00 P.M ET, Monday through Friday.
+        </p>
+    <div class="social-link">
+<a href=""><img src="images/icons/facebook.png" alt=""></a>
+<a href=""><img src="images/icons/twitter.png" alt=""></a>
+<a href=""><img src="images/icons/insta.png" alt=""></a>
+
+    </div>
+    
+    
+    </div>
+    <div class="footer_coloum">
+        <h3 class="sec-title">Let’s Message me</h3>
+   
+   
+   <form action="" class="contact">
+    <input type="text" placeholder="Your name">
+    <input type="email" placeholder="Your email">
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <input type="submit" value="submit" class="btn_primary">
+</form>
+   
+   
+   
+   
+   
+    </div>
+    
+    </footer>
+    
+<!-- Code injected by live-server -->
 
 <!-- Code injected by live-server -->
 
